@@ -2,7 +2,6 @@ from flask import *
 import io
 import urllib.request
 import json
-import matplotlib.pyplot as plt
 from matplotlib.backends.backend_agg import FigureCanvasAgg as canv
 from matplotlib.figure import Figure
 import base64
