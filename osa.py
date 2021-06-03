@@ -16,7 +16,7 @@ def plot():
     raw_data = req.read()
     #reattempt to get trace data if random string is returned
     while "instrument_model" not in str(raw_data): 
-        req=urllib.request.urlopen("trace_url")
+        req=urllib.request.urlopen(trace_url)
         raw_data = req.read()
 
     #extract information from json
@@ -25,9 +25,8 @@ def plot():
     x_label = data["xlabel"]+" (" + data["xunits"]+")"
     y=data["ydata"]
     y_label = data["ylabel"]+" (" + data["yunits"]+")"
-    date = data["timestamp"].split(".")
-    time=date[2].split()
-    title="OSA Measurement at 20%s-%s-%sT%s (UTC)" %(date[0],date[1],time[0],time[1])
+    date = data["timestamp"].replace(" ", ".").split(".")
+    title="OSA Measurement at 20%s-%s-%sT%s (UTC)" %(date[0],date[1],date[2],date[3])
 
     #create figure using matplotlib
     img=io.BytesIO()
