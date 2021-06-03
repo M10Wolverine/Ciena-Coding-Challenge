@@ -8,8 +8,7 @@ Instructions
 4. Open web browser and navigate to http://127.0.0.1:5000/ 
 5. Click on "Get data" to get a new set of data from the OSA. Click on the plot to save it to your local computer. 
 
+
 Additional Features:
-
-Plot title with date/time stamp in compliance with ISO 8601
-
-Plot image saving
+1. Plot title with date/time stamp in compliance with ISO 8601
+2. Plot image saving
