@@ -9,5 +9,7 @@ Instructions
 5. Click on "Get data" to get a new set of data from the OSA. Click on the plot to save it to your local computer. 
 
 Additional Features:
+
 Plot title with date/time stamp in compliance with ISO 8601
+
 Plot image saving
