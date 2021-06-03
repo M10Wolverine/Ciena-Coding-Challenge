@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="{{url_for('static', filename='css/style.css')}}"
+      rel="stylesheet"
+    />
+    <title>OSA Plot</title>
+  </head>
+  <body>
+    <h1>Virtual Optical Spectrum Analyzer Data Spectrum Plot</h1>
+    <p>
+      Click on "Get data" to retrieve a new set of data from the virtual OSA.
+    </p>
+    <p>Click on the plot to download to your computer</p>
+    <a href="{{ image }}" download="OSA_plot">
+      <img src="{{ image }}" />
+    </a>
+    <form action="/">
+      <input type="submit" value="Get data" />
+    </form>
+  </body>
+</html>
