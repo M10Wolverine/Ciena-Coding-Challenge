@@ -1,4 +1,4 @@
-Ciena Coding Challenge for Instrumentation Automation Developer Co-op
+OSA Coding Challenge
 
 Instructions
 1. Download and extract files to directory of your choosing
